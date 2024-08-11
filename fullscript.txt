@@ -1,0 +1,23 @@
+  1 #!/bin/bash
+  2 echo "Hello Student!"
+  3 read -p "Введите имя: " name
+  4 echo "Welcome to terminal $name"
+  5 mkdir -p /tmp/test
+  6 touch /tmp/test/mydate.txt
+  7 date '+%Y-%m-%d %H:%M:%S' > /tmp/test/mydate.txt
+  8 echo "Сохраняем данные"
+  9 for ((i=1; i<=10; i++))
+ 10 do
+ 11   echo "$i"
+ 12   sleep 0.5
+ 13 done
+ 14 echo "Data saved. continue work"
+ 15 df -h >> /tmp/test/mydate.txt
+ 16 mkdir -p /opt/mydate
+ 17 cp /tmp/test/mydate.txt /opt/mydate/newmydate.txt
+ 18 for ((i=1; i<=5; i++))
+ 19 do
+ 20   sleep 1
+ 21 done
+ 22 echo "Well done Boss"
+~                           

@@ -1,0 +1,103 @@
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/21052024_morning/Anton_SB
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls
+100.txt  53.txt  57.txt  61.txt  65.txt  69.txt  73.txt  77.txt  81.txt  85.txt  89.txt  93.txt  97.txt      box.txt               new.sh              script
+50.txt   54.txt  58.txt  62.txt  66.txt  70.txt  74.txt  78.txt  82.txt  86.txt  90.txt  94.txt  98.txt      fullscript.sh         os_info.txt         sleeper.sh
+51.txt   55.txt  59.txt  63.txt  67.txt  71.txt  75.txt  79.txt  83.txt  87.txt  91.txt  95.txt  99.txt      masha_shi             os_name.txt         today.sh
+52.txt   56.txt  60.txt  64.txt  68.txt  72.txt  76.txt  80.txt  84.txt  88.txt  92.txt  96.txt  askname.sh  myfirstbashscript.sh  processor_info.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./fullscript.sh
+Hello Student!
+Введите имя: Anton
+Welcome to terminal Anton
+Сохраняем данные
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Data saved. continue work
+Well done Boss
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /tmp/test
+mydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /tmp/test/mydate.txt
+/tmp/test/mydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat /tmp/test/mydate.txt
+2024-08-11 10:16:58
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        957M     0  957M   0% /dev
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           966M  528K  965M   1% /run
+tmpfs           966M     0  966M   0% /sys/fs/cgroup
+/dev/nvme0n1p1   20G   19G  1.3G  94% /
+tmpfs           194M     0  194M   0% /run/user/1000
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /opt/mydate
+newmydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /opt/mydate/newmydate.txt
+/opt/mydate/newmydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /tmp/test
+mydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat /tmp/test/mydate.txt
+2024-08-11 10:16:58
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        957M     0  957M   0% /dev
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           966M  528K  965M   1% /run
+tmpfs           966M     0  966M   0% /sys/fs/cgroup
+/dev/nvme0n1p1   20G   19G  1.3G  94% /
+tmpfs           194M     0  194M   0% /run/user/1000
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /opt/mydate
+newmydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat /opt/mydate/newmydate.txt
+2024-08-11 10:16:58
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        957M     0  957M   0% /dev
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           966M  528K  965M   1% /run
+tmpfs           966M     0  966M   0% /sys/fs/cgroup
+/dev/nvme0n1p1   20G   19G  1.3G  94% /
+tmpfs           194M     0  194M   0% /run/user/1000
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./fullscript.sh
+Hello Student!
+Введите имя: Anton
+Welcome to terminal Anton
+Сохраняем данные
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Data saved. continue work
+Well done Boss
+[ec2-user@ip-172-31-33-20 Anton_SB]$ rm {50..100}.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls -al
+total 48
+drwxrwxr-x  3 ec2-user ec2-user  231 Aug 11 10:35 .
+drwxrwxr-x 18 ec2-user ec2-user 4096 Aug  7 12:52 ..
+-rwxrwxr-x  1 ec2-user ec2-user  216 Aug  5 12:00 askname.sh
+-rw-rw-r--  1 ec2-user ec2-user 2182 Jul 31 12:19 box.txt
+-rwxrwxr-x  1 ec2-user ec2-user  493 Aug 11 10:15 fullscript.sh
+-rwxrwxr-x  1 ec2-user ec2-user  327 Aug  5 12:26 masha_shi
+-rwxrwxr-x  1 ec2-user ec2-user  327 Jul 24 15:19 myfirstbashscript.sh
+-rwxrwxr-x  1 ec2-user ec2-user  194 Aug  5 12:22 new.sh
+-rw-rw-r--  1 ec2-user ec2-user   20 Aug 10 20:08 os_info.txt
+-rw-rw-r--  1 ec2-user ec2-user   13 Aug 10 20:08 os_name.txt
+-rw-rw-r--  1 ec2-user ec2-user 1154 Aug 10 20:08 processor_info.txt
+drwxrwxr-x  2 ec2-user ec2-user    6 Aug  5 12:27 script
+-rwxrw-r--  1 ec2-user ec2-user  304 Aug 10 20:07 sleeper.sh
+-rwxrwxr-x  1 ec2-user ec2-user   31 Aug  7 11:50 today.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim
+askname.sh            fullscript.sh         myfirstbashscript.sh  os_info.txt           processor_info.txt    sleeper.sh
+box.txt               masha_shi             new.sh                os_name.txt           script/               today.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$
